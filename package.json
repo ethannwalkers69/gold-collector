@@ -1,0 +1,9 @@
+{
+  "name": "gold-collector",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Mining Game: static game + leaderboard, chat at clans API",
+  "main": "server.js",
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": ">=18" }
+}
