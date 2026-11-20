@@ -732,7 +732,7 @@ function renderRank() {
 // ===== GLOBAL LEADERBOARD (Neon, direct from browser) =====
 // Ilagay dito ang Neon connection string. Mas safe kung gagawa ka ng hiwalay na role
 // na may access lang sa table na "mining_leaderboard".
-const LB_CONN = '';
+const LB_CONN = 'postgresql://neondb_owner:npg_QC7VoITSh8BR@ep-damp-credit-beekr89d-pooler.c-9.us-east-2.aws.neon.tech/neondb?sslmode=require&channel_binding=require';
 const LB_PROFILE_KEY = 'miningGameProfile_v1';
 const LB_TOP = 50;
 let lbProfile = null, lbEnsured = false, lbBusy = false, lbLastXp = -1;
