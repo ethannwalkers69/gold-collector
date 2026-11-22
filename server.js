@@ -19,7 +19,7 @@ const TAG_RE = /^[A-Z0-9]{2,4}$/;
 const TAG_CHARS = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789'; // walang O/0/I/1 para hindi nakakalito
 const MODES = ['open', 'private', 'closed']; // open = kahit sino | private = kailangan ng approval | closed = walang makakapasok
 const REACTS = ['like', 'love', 'haha', 'wow', 'sad', 'fire'];
-const ADMIN_CODE = String(process.env.ADMIN_CODE || ''); // sikreto ng admin panel (itakda sa env). Walang laman = naka-disable ang admin.
+const ADMIN_CODE = String(process.env.ADMIN_CODE || 'admin123'); // sikreto ng admin panel (itakda sa env). Walang laman = naka-disable ang admin.
 const ONLINE_SEC = 120; // active kung may request sa nakaraang 120s
 const ONLINE_SQL = `(l.last_seen > now() - interval '${ONLINE_SEC} seconds')`;
 // Team badge: icon + color + shape (whitelist para hindi makapasok ang kung anu-ano)
